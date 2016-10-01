@@ -20,3 +20,10 @@ Class|Name|Gender|Age
 :---:|:---|:----:|---
 2    |Sam|male|18
 3|Marry|female|16
+
+#代码区块
+    
+    function add(){
+      $i=1;
+      echo $i;
+    }
