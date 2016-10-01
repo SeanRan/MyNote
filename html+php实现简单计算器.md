@@ -52,8 +52,8 @@ if(is_numeric($a)&&is_numeric($b)){
 	echo '请输入合法数字！';
 }
 ```
-**效果⬇️**
+**效果⬇️**  
 ![](http://ww1.sinaimg.cn/large/005xbErCgw1f8d2t3uhiuj30ap00xa9v.jpg)
-![](http://ww1.sinaimg.cn/large/005xbErCgw1f8d2t3uhiuj30ap00xa9v.jpg)
+
 
 
