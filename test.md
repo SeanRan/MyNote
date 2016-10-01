@@ -27,3 +27,11 @@ Class|Name|Gender|Age
       $i=1;
       echo $i;
     }
+
+＃代码高亮  
+```
+function add(){
+      $i=1;
+      echo $i;
+    }
+```
