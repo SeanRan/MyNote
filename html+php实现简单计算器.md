@@ -54,5 +54,6 @@ if(is_numeric($a)&&is_numeric($b)){
 ```
 **效果⬇️**
 ![](http://ww1.sinaimg.cn/large/005xbErCgw1f8d2t3uhiuj30ap00xa9v.jpg)
+![](http://ww1.sinaimg.cn/large/005xbErCgw1f8d2t3uhiuj30ap00xa9v.jpg)
 
 
