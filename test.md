@@ -28,8 +28,8 @@ Class|Name|Gender|Age
       echo $i;
     }
 
-＃代码高亮  
-```
+#代码高亮  
+```php
 function add(){
       $i=1;
       echo $i;
