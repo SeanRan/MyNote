@@ -4,6 +4,7 @@
     function getExtension($fileName){
       return substr($fileName,strrpos($fileName,".")+1);
     }
+    
 2.  
     
     function getExtension($fileName,$unsigned=false){
@@ -15,6 +16,7 @@
       	}
   	  }
     }
+    
 3.
     
     fuction getExtension($fileName){
