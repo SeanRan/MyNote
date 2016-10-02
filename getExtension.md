@@ -6,7 +6,7 @@
     }
     
 2.
-    
+
     function getExtension($fileName,$unsigned=false){
       if($unsigned=false){
       	return strrchr($fileName);
@@ -23,3 +23,6 @@
       $arr = explode(".",$fileName);
       return end($arr);
     }
+
+-
+想到再补充
