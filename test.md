@@ -39,8 +39,8 @@ function add(){
 ```
 
 #laTex  
-
 $$e=mc^2$$
 
-- [x]yes
-- [ ]no
+#todo  
+- [x] yes
+- [ ] no
