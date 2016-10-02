@@ -9,7 +9,8 @@
 换行符 : 一行结束时输入两个空格  
 列表 :
 * 添加星号成为一个新的列表项。
-引用 :> 引用内容
+引用 :  
+> 引用内容
 内嵌代码 : `alert('Hello World');`  
 画水平线 (HR) :  
 
@@ -27,7 +28,7 @@ Class|Name|Gender|Age
       $i=1;
       echo $i;
     }
-
+    
 #代码高亮  
 ```php
 function add(){
