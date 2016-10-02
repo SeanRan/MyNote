@@ -1,5 +1,5 @@
 #获取文件扩展名的几种方法
-1. 
+1.  
 
     function getExtension($fileName){
       return substr($fileName,strrpos($fileName,".")+1);
@@ -17,7 +17,7 @@
   	  }
     }
     
-3.
+3.  
     
     fuction getExtension($fileName){
       $arr = explode(".",$fileName);
