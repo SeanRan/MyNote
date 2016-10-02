@@ -42,5 +42,5 @@ function add(){
 
 $$e=mc^2$$
 
-- [x] yes
-- [ ] no
+- [x]yes
+- [ ]no
