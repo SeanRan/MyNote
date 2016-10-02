@@ -37,3 +37,9 @@ function add(){
       echo $i;
     }
 ```
+
+#laTex
+$$e=mc^2$$
+
+- [x] yes
+- [ ] no
