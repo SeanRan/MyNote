@@ -6,7 +6,7 @@
     }
     
 2.
-
+    
     function getExtension($fileName,$unsigned=false){
       if($unsigned=false){
       	return strrchr($fileName);
