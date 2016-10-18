@@ -16,7 +16,7 @@ class Singleton{
 	}
 	//用一个静态方法来做一次实例化，并将实例存储到开头的静态属性$obj中用于外部访问
 	static function getObj(){
-		//次if语句是为了保证只实例化一次Singleton类
+		//此if语句是为了保证只实例化一次Singleton类
 		if(is_null(self::$obj)){
 			self::$obj = new Singleton;
 		}
