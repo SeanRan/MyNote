@@ -1,0 +1,40 @@
+SlowStartPhase()	//慢启动算法
+{
+	CongWin = 1;	//拥塞窗口cwnd的初值为一个MSS
+	while(CongWin < Threshold && 无数据丢失)	//当拥塞窗口小于慢启动阈值且没有发生丢包时
+	{
+		for each ACK
+			CongWin ++;	//每收到一个确认数据报，拥塞窗口加1
+	}
+	if(CongWin >= Threshold) then
+		CongestionAvoidancePhase();	//当拥塞窗口大于等于慢启动阈值时，启动拥塞避免算法
+	if(数据丢失)then
+		DataLoss();	//丢包后的处理方法
+}
+
+CongestionAvoidancePhase()	//拥塞避免算法
+{
+	while(无数据丢失)
+	{
+		for eachRTT
+			CongWin = CongWin + 1;	//每经过一个RTT，拥塞窗口加1
+	}
+	DataLoss();
+}
+
+DataLoss()	//丢包后的处理方法
+{
+	if(超时)then
+	{
+		Threshold = CongWin/2;
+		CongWin = 1;
+		SlowStartPhase();	//如果发生超时，慢启动阈值置为当前拥塞窗口的一半，然后将拥塞窗口置1，开始执行拥塞避免算法
+	}
+	if(3次重复确认)then
+	{
+		Threshold = CongWin/2;
+		CongWin = CongWin/2;
+		CongestionAvoidancePhase();	//如果收到3个重复的确认，则执行快速重传和快速恢复算法，
+									//慢启动阈值减小为拥塞窗口的一半，同时将拥塞窗口减半，开始拥塞避免算法
+	}
+}
